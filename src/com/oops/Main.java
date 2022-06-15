@@ -3,7 +3,7 @@ package com.oops;
 public class Main {
     
     public static void main(String[] args) {
-
+/*
         SamsungS9Plus phoneOne = new SamsungS9Plus();
         SamsungS9Plus phoneTwo = new SamsungS9Plus();
 
@@ -26,8 +26,6 @@ public class Main {
         System.out.println(SamsungS9Plus.CEO);
         System.out.println(SamsungS9Plus.CEO);
 
-/*
-
         Baloon baloonOne = new Baloon(12);
         Baloon baloonTwo  = new Baloon(34);
 
@@ -35,7 +33,23 @@ public class Main {
 
         baloonOne.show();
         baloonTwo.show();
-
 */
+
+        Phone samsung =
+                new Phone(12,128, "Samsung", 2500);
+        Phone goodPhone =
+                new Phone(16, 256);
+        Phone goodConfig =
+                new Phone(12, 100, "Vivo");
+        Phone None =
+                new Phone();
+
+        long a = 777777777;
+        long b = 777777777;
+        System.out.println(goodPhone.calcAdd(a, b));
+        System.out.println(goodPhone.calcAdd(4, 5));
+        System.out.println(goodPhone.calcAdd(4, 5, 5));
+        System.out.println(goodPhone.calcAdd(4, 5, 5, 6));
+        System.out.println(goodConfig.calcAdd(2,2,2,2,2,2,2,2,2,2));
     }
 }
