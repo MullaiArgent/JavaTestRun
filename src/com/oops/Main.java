@@ -51,5 +51,11 @@ public class Main {
         System.out.println(goodPhone.calcAdd(4, 5, 5));
         System.out.println(goodPhone.calcAdd(4, 5, 5, 6));
         System.out.println(goodConfig.calcAdd(2,2,2,2,2,2,2,2,2,2));
+
+        Ballon.ChinnaBallon naVechaName = new Ballon.ChinnaBallon();
+        Ballon ballon = new Ballon(23); // Outer Class
+
+        ballon.show();
+        naVechaName.show();
     }
 }
