@@ -36,10 +36,20 @@ class Main{
         "CamelCasing"
         "snake_casing"
         */
+
         arithmeticOperations();
         ifElseStatement();
         ternaryOperations();
         switchOperations();
+
+
+
+
+        int i = 12; // Primitive
+        Integer varName = new Integer(i);  // Wrapping or Boxing
+        int j = varName.intValue(); // Unwrapping or Unboxing
+        Integer varIntName = 12; // AutoBoxing
+        System.out.println(j);
     }
 
     public static void arithmeticOperations(){
@@ -165,3 +175,7 @@ class Main{
     }
 
 }
+
+/*
+    find the factorial of 854637654286548563564
+*/

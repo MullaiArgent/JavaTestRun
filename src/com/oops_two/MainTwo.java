@@ -20,9 +20,10 @@ class B extends A{
         System.out.println("Im from B, i need a int to construct");
     }
 
+
     @Override
     public String toString(){
-        return "enw";
+        return "new";
     }
 }
 class C extends B{
