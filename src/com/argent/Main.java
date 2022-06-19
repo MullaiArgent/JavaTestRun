@@ -42,9 +42,6 @@ class Main{
         ternaryOperations();
         switchOperations();
 
-
-
-
         int i = 12; // Primitive
         Integer varName = new Integer(i);  // Wrapping or Boxing
         int j = varName.intValue(); // Unwrapping or Unboxing
