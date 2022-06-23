@@ -56,6 +56,6 @@ public class Main {
         Ballon ballon = new Ballon(23); // Outer Class
 
         ballon.show();
-        naVechaName.show();
+
     }
 }

@@ -1,20 +1,16 @@
 package com.oops;
 
-class Ballon {
+public class Ballon {
 
     static class ChinnaBallon{
-        int a =12;
+        int a = 12;
 
         ChinnaBallon(){
             System.out.println("Im constructor of the inner class");
         }
-
-        public void show(){
-            System.out.println("Ill show");
-        }
     }
 
-    int capacity;
+    public final int capacity;
 
     public Ballon(int capacity){
         this.capacity = capacity;
@@ -22,7 +18,8 @@ class Ballon {
                 "and the capacity is "+ this.capacity);
     }
 
-    void show(){
+     public void show(){
         System.out.println(capacity);
     }
+
 }
