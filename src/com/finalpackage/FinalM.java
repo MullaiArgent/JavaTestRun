@@ -6,6 +6,7 @@ class ClassA{
     }
 }
 class ClassB extends ClassA{
+
     /*
 
     @Override // cannot be overridden
