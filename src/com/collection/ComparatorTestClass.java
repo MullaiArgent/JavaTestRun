@@ -1,9 +1,6 @@
 package com.collection;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 class Student implements Comparable<Student>{
 
@@ -54,8 +51,8 @@ public class ComparatorTestClass {
         students.add(new Student("Lilly", 17, 35));
 
         Collections.sort(arr);
-        Collections.sort(students);
 
+        Collections.sort(students, (Student s1, Student s2) ->  (s1.age  > s2.age) ? -1 : 1);
         System.out.println(students);
 
         List<Integer> arr2 = new ArrayList<>();
@@ -66,10 +63,12 @@ public class ComparatorTestClass {
         arr2.add(7342);
         arr2.add(6349);
 
-
-
         Collections.sort(arr2);
-        System.out.println(arr2);
+
+        Iterator it = arr2.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
 
         Comparator<Integer> comparator = new Comparator<>() {
             @Override
@@ -95,6 +94,20 @@ public class ComparatorTestClass {
                     temp = arr[j];
                     arr[j] = arr[i];
                     arr[i] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+
+    public static ArrayList<Student> manualSortOfObj(ArrayList<Student> arr){
+        Student temp;
+        for (int i = 0;i < arr.size() -1;i++){
+            for (int j = i + 1; j < arr.size(); j ++){
+                if (arr.get(i).age > arr.get(j).age) {
+                    temp = arr.get(j);
+                    arr.set(j, arr.get(i));
+                    arr.set(i, temp);
                 }
             }
         }
